@@ -1,6 +1,6 @@
 export default function Dashboard() {
   return (
-    <div className="flex flex-row justify-between items-center min-h-screen  mb-10">
+    <div className="flex flex-row justify-between items-center min-h-screen  mb-10 text-white z-10">
       <div className="flex flex-col gap-5">
         <h1 className="flex justify-center md:text-5xl  pt-6 text-center text-2xl">
           Hi There <span className="wave">👋</span>
