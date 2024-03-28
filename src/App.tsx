@@ -6,6 +6,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import Navbar from "./ui/Navbar";
+import Skills from "./ui/Skills";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 function App() {
@@ -25,8 +26,6 @@ function App() {
       setInit(true);
     });
   }, []);
-
-  const particlesLoaded = () => {};
 
   const options = useMemo(
     () => ({
@@ -63,7 +62,7 @@ function App() {
         },
         links: {
           color: "#ffffff",
-          distance: 150,
+          distance: 140,
           enable: true,
           opacity: 0.5,
           width: 1,
@@ -91,7 +90,7 @@ function App() {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 7 },
+          value: { min: 1, max: 5 },
         },
       },
       detectRetina: true,
@@ -104,7 +103,6 @@ function App() {
       <div className="relative">
         <Particles
           id="tsparticles"
-          particlesLoaded={particlesLoaded}
           options={options}
           className="absolute top-0 left-0 w-full h-full -z-10"
         />
@@ -112,6 +110,7 @@ function App() {
           <Navbar />
           <Dashboard />
           <AboutMe />
+          <Skills />
         </div>
       </div>
     );

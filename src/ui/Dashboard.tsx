@@ -6,7 +6,7 @@ export default function Dashboard() {
     >
       <div className="flex flex-col md:gap-5 gap-2">
         <h1 className="flex justify-center md:text-5xl  pt-6 text-center text-2xl flex-col lg:flex-row">
-          Hi There <span className="wave">👋</span>
+          Hi <span className="wave">👋</span>
         </h1>
         <h2 className="text-2xl md:text-5xl text-center font-bold">
           I`m Rasit Ulug
