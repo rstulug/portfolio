@@ -13,10 +13,10 @@ export default function Navbar() {
             <a href="#skills">Skills</a>
           </li>
           <li className="hover:text-sky-300 hover:scale-105">
-            <a href="">Experience</a>
+            <a href="#experience">Experience</a>
           </li>
           <li className="hover:text-sky-300 hover:scale-105">
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
         </ul>
       </div>

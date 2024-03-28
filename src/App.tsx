@@ -7,6 +7,8 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import Navbar from "./ui/Navbar";
 import Skills from "./ui/Skills";
+import Experience from "./ui/Experience";
+import Projects from "./ui/Projects";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
           value: "#151616",
         },
       },
-      fpsLimit: 180,
+      fpsLimit: 100,
       interactivity: {
         events: {
           onClick: {
@@ -74,7 +76,7 @@ function App() {
             default: "bounce",
           },
           random: false,
-          speed: 2,
+          speed: 1,
           straight: false,
         },
         number: {
@@ -111,6 +113,8 @@ function App() {
           <Dashboard />
           <AboutMe />
           <Skills />
+          <Experience />
+          <Projects />
         </div>
       </div>
     );
