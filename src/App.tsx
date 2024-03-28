@@ -5,6 +5,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 // import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import Navbar from "./ui/Navbar";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 function App() {
@@ -25,9 +26,7 @@ function App() {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  const particlesLoaded = () => {};
 
   const options = useMemo(
     () => ({
@@ -109,8 +108,11 @@ function App() {
           options={options}
           className="absolute top-0 left-0 w-full h-full -z-10"
         />
-        <Dashboard />
-        <AboutMe />
+        <div className="max-w-screen-xl mx-auto text-white">
+          <Navbar />
+          <Dashboard />
+          <AboutMe />
+        </div>
       </div>
     );
   }
