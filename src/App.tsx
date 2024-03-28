@@ -102,7 +102,7 @@ function App() {
 
   if (init) {
     return (
-      <div className="relative">
+      <div className="relative ">
         <Particles
           id="tsparticles"
           options={options}

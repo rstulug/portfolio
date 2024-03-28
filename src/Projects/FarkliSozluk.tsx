@@ -17,13 +17,13 @@ export default function FarkliSozluk() {
         <p>A social platform</p>
 
         <span className="w-full h-1 bg-white"></span>
-        <p>Check It Out</p>
-        <a
-          href="https://farklisozluk.netlify.app/"
-          target="_blanket"
-          className="underline text-blue-500 text-xs md:text-lg"
-        >
-          https://farklisozluk.netlify.app/
+        <a href="https://farklisozluk.netlify.app/" target="_blank">
+          <button
+            className="border-gray-200 border py-1 px-3 rounded-lg bg-black w-[60%] mx-auto hover:bg-red-600 hover:text-black hover:font-semibold sm:text-base"
+            style={{ transition: "background-color 0.5s linear " }}
+          >
+            Show website
+          </button>
         </a>
         <span className="w-full h-1 bg-white"></span>
         <p>See Codes</p>

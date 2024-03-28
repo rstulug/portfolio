@@ -2,7 +2,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="flex justify-center items-center md:w-[80%]  mx-auto md:min-h-screen h-auto mt-5 md:mt-0 text-xl"
+      className="flex justify-center items-center md:w-[80%]  mx-auto md:min-h-screen h-auto mt-5 lg:mt-0 text-xl"
     >
       <div className="relative">
         <h2 className="text-3xl text-center mb-5 underline">Experience</h2>
