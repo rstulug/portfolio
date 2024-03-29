@@ -41,7 +41,7 @@ function App() {
           value: "#151616",
         },
       },
-      fpsLimit: 20,
+      fpsLimit: 120,
       interactivity: {
         events: {
           onClick: {
@@ -108,29 +108,27 @@ function App() {
     []
   );
 
-  return (
-    <div
-      className="relative min-h-screen "
-      style={{ backgroundColor: init ? "" : "#151616" }}
-    >
-      {init && (
+  if (init) {
+    return (
+      <div className="relative ">
         <Particles
           id="tsparticles"
           options={options}
           particlesLoaded={particlesLoaded}
           className="absolute top-0 left-0 w-full h-full -z-10"
         />
-      )}
-      <div className="max-w-screen-xl mx-auto text-white">
-        <Navbar />
-        <Dashboard />
-        <AboutMe />
-        <Skills />
-        <Experience />
-        <Projects />
+        <div className="max-w-screen-xl mx-auto text-white">
+          <Navbar />
+          <Dashboard />
+          <AboutMe />
+          <Skills />
+          <Experience />
+          <Projects />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  return <div></div>;
 }
 
 export default App;
