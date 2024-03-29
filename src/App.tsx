@@ -74,6 +74,9 @@ function App() {
           opacity: 0.5,
           width: 1,
         },
+        collisions: {
+          enable: false,
+        },
         move: {
           direction: "none",
           enable: true,
