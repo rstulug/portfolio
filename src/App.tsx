@@ -10,6 +10,7 @@ import Skills from "./ui/Skills";
 import Experience from "./ui/Experience";
 import Projects from "./ui/Projects";
 import { useEffect, useMemo, useState } from "react";
+import Contact from "./ui/Contact";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
           value: "#151616",
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 60,
       interactivity: {
         events: {
           onClick: {
@@ -91,10 +92,10 @@ function App() {
           density: {
             enable: true,
           },
-          value: 140,
+          value: 90,
         },
         opacity: {
-          value: 0.5,
+          value: 0.2,
         },
         shape: {
           type: "circle",
@@ -103,7 +104,7 @@ function App() {
           value: { min: 1, max: 5 },
         },
       },
-      detectRetina: true,
+      detectRetina: false,
     }),
     []
   );
@@ -125,6 +126,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
+        <Contact />
       </div>
     </div>
   );

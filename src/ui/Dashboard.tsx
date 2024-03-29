@@ -34,6 +34,7 @@ export default function Dashboard() {
           src={"/bg-removed.png"}
           alt="Rasit_ulug_image"
           className="md:w-[35rem] md:h-[40rem] object-cover rounded-xl w-[9rem] h-[15rem] mx-auto md:mx-0 mb-4 md:mb-0"
+          loading="lazy"
         />
       </div>
     </div>
