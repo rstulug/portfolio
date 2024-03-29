@@ -109,16 +109,14 @@ function App() {
   );
 
   return (
-    <div className="relative ">
-      {init ? (
+    <div className="relative bg-[#151616] -z-[-20]">
+      {init && (
         <Particles
           id="tsparticles"
           options={options}
           particlesLoaded={particlesLoaded}
           className="absolute top-0 left-0 w-full h-full -z-10"
         />
-      ) : (
-        <div className="absolute top-0 left-0 w-full h-full -z-10 bg-[#151616]"></div>
       )}
       <div className="max-w-screen-xl mx-auto text-white">
         <Navbar />
