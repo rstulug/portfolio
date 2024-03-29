@@ -108,28 +108,27 @@ function App() {
     []
   );
 
-  return (
-    <div className="relative">
-      {init ? (
+  if (init) {
+    return (
+      <div className="relative ">
         <Particles
           id="tsparticles"
           options={options}
           particlesLoaded={particlesLoaded}
           className="absolute top-0 left-0 w-full h-full -z-10"
         />
-      ) : (
-        <div className="absolute top-0 left-0 w-full h-full -z-10 bg-[#151616]"></div>
-      )}
-      <div className="max-w-screen-xl mx-auto text-white">
-        <Navbar />
-        <Dashboard />
-        <AboutMe />
-        <Skills />
-        <Experience />
-        <Projects />
+        <div className="max-w-screen-xl mx-auto text-white">
+          <Navbar />
+          <Dashboard />
+          <AboutMe />
+          <Skills />
+          <Experience />
+          <Projects />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  return <div></div>;
 }
 
 export default App;
