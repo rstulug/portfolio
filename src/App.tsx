@@ -1,7 +1,7 @@
 import AboutMe from "./ui/AboutMe";
 import Dashboard from "./ui/Dashboard";
-import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { type ISourceOptions } from "@tsparticles/engine";
 // import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
@@ -9,6 +9,7 @@ import Navbar from "./ui/Navbar";
 import Skills from "./ui/Skills";
 import Experience from "./ui/Experience";
 import Projects from "./ui/Projects";
+import { useEffect, useMemo, useState } from "react";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 function App() {
@@ -29,22 +30,22 @@ function App() {
     });
   }, []);
 
-  const options = useMemo(
+  const options: ISourceOptions = useMemo(
     () => ({
       background: {
         color: {
           value: "#151616",
         },
       },
-      fpsLimit: 100,
+      fpsLimit: 120,
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: "push",
           },
           onHover: {
-            enable: true,
+            enable: false,
             mode: "repulse",
           },
         },
@@ -64,7 +65,7 @@ function App() {
         },
         links: {
           color: "#ffffff",
-          distance: 140,
+          distance: 150,
           enable: true,
           opacity: 0.5,
           width: 1,
@@ -83,7 +84,7 @@ function App() {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 140,
         },
         opacity: {
           value: 0.5,
