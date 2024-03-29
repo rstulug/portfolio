@@ -1,7 +1,7 @@
 import AboutMe from "./ui/AboutMe";
 import Dashboard from "./ui/Dashboard";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { type ISourceOptions } from "@tsparticles/engine";
+import { type Container, type ISourceOptions } from "@tsparticles/engine";
 // import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
@@ -29,6 +29,10 @@ function App() {
       setInit(true);
     });
   }, []);
+
+  const particlesLoaded = async (container?: Container): Promise<void> => {
+    console.log(container);
+  };
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -107,6 +111,7 @@ function App() {
         <Particles
           id="tsparticles"
           options={options}
+          particlesLoaded={particlesLoaded}
           className="absolute top-0 left-0 w-full h-full -z-10"
         />
         <div className="max-w-screen-xl mx-auto text-white">
