@@ -18,6 +18,9 @@ export default function Navbar() {
           <li className="hover:text-sky-300 hover:scale-105">
             <a href="#projects">Projects</a>
           </li>
+          <li className="hover:text-sky-300 hover:scale-105">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
