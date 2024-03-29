@@ -28,7 +28,7 @@ export default function Projects() {
         <div className=" flex md:flex-row flex-wrap gap-4 flex-col justify-center">
           <SaltedPopCorn />
           <MyLittleJourney />
-          <FarkliSozluk />p
+          <FarkliSozluk />
         </div>
       </div>
     </div>
