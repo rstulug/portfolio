@@ -10,7 +10,7 @@ export default function Projects() {
     >
       <div>
         <h2 className="text-3xl text-center mb-5 underline">Projects</h2>
-        <p className="mb-2 border border-sky-400 md:text-xl px-2 py-3 rounded-2xl bg-[#151616] text-base">
+        <p className="mb-2 border border-sky-400 md:text-xl px-2 py-3 rounded-2xl bg-[#151616] text-base text-justify">
           Throughout my learning journey, I've undertaken numerous small
           projects. However, I believe it's more impactful to populate my GitHub
           repository with comprehensive projects that I've independently
